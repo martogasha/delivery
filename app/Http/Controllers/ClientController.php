@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Booking;
+use App\Message;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -49,6 +50,34 @@ class ClientController extends Controller
         $booking = Booking::find($id);
         return view('client.direction',[
             'booking'=>$booking
+        ]);
+    }
+    public function message($id){
+        $booking = Booking::where('carrier_id',$id)->first();
+        return view('client.message',[
+            'booking'=>$booking
+        ]);
+    }
+    public function messageMenu(){
+        $carriers = Booking::where('user_id',Auth::id())->get()->unique('carrier_id');
+        return view('client.messageMenu',[
+            'carriers'=>$carriers,
+
+        ]);
+    }
+    public function getMessage($receiver_id){
+        $my_id = Auth::id();
+        $messages = Message::where('from',$my_id)->where('to',$receiver_id)->orWhere('from',$receiver_id)->where('to',$my_id)->get();
+        $getCarrier = User::find($receiver_id);
+        return view('client.meso',[
+            'messages'=>$messages,
+            'getCarrier'=>$getCarrier
+        ]);
+    }
+    public function getCarrier($carrier_id){
+        $messages = Message::where('from',$carrier_id)->where('to',Auth::id())->orWhere('from',Auth::id())->where('to',$carrier_id)->get();
+        return view('client.messageMenu',[
+            'messages'=>$messages
         ]);
     }
     public function carrierSearch(Request $request){

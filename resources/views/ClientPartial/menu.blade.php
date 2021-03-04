@@ -18,9 +18,9 @@
         </a>
     </div>
     <div class="bp-col">
-        <a href="{{url('profile')}}">
+        <a href="{{url('messageMenu')}}">
             <div class="bp-icon"><img src="{{asset('img/ipaccount.png')}}" alt="icon"></div>
-            <div class="bp-text">Account</div>
+            <div class="bp-text">Messages</div>
         </a>
     </div>
 </div>

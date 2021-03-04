@@ -97,6 +97,9 @@
                                     <div class="cd"><b>0790268795</b></div>
                                     <div class="cd">{{$booking->type}}</div>
                                     <div class="mr-car-code">{{$booking->amount}}/=</div>
+                                    <hr>
+                                    <a href="{{url('carrierMessage',$booking->user_id)}}"><button class="btn btn-block btn-info">Send Message <span class="badge badge-success">1</span></button></a>
+
                                 </div>
                             </div>
                         </div>

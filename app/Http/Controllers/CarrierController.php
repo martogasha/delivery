@@ -4,15 +4,24 @@ namespace App\Http\Controllers;
 
 use App\Booking;
 use App\Events\Searching;
+use App\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class CarrierController extends Controller
 {
     public function home(){
-        $bookings = Booking::all();
+        $bookings = Booking::where('carrier_id',Auth::id())->orWhere('carrier_id',null)->get();
         return view('carrier.index',[
             'bookings'=>$bookings
+        ]);
+    }
+    public function message($id){
+        $booking = Booking::where('user_id',$id)->first();
+        $messages = Message::where('from',$id)->where('to',Auth::id())->orWhere('from',Auth::id())->where('to',$id)->get();
+        return view('carrier.message',[
+            'booking'=>$booking,
+            'messages'=>$messages
         ]);
     }
     public function carrierDirection($id){

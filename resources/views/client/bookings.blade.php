@@ -70,10 +70,10 @@
                 </div>
             </div>
             @foreach($bookings as $booking)
-                <a href="{{url('direction',$booking->id)}}">
             <div class="row car-row">
                 <div class="col-md-12">
                     <div class="car-card">
+                        <a href="{{url('direction',$booking->id)}}">
                         <div class="cc-left">
                             <div class="ccl-img">
                                 <img src="img/car2-nissan3.png" alt="car">
@@ -83,6 +83,7 @@
 
                             </div>
                         </div>
+                        </a>
                         @if(!$booking->carrier_id==null)
                         <div class="cc-right">
                             <div class="ccr-row-a">{{$booking->carrier->plates}}</div>
@@ -96,12 +97,9 @@
                                 <h5>Searching for Nearby Carrier...</h5>
                             </div>
                             @endif
-
-
                     </div>
                 </div>
             </div>
-                </a>
             @endforeach
 
             <div class="row car-row pagination-row">
@@ -134,6 +132,7 @@
 
     </div>
 </div>
+<!-- Modal -->
 <!-- .Content  -->
 <!-- Botom Panel  -->
 @include('ClientPartial.menu')

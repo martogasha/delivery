@@ -135,7 +135,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <hr>
+                    <a href="{{url('message',$booking->carrier_id)}}"><button class="btn btn-block btn-info">Send Message <span class="badge badge-success">1</span></button></a>
 
                 </div>
                 <div class="subsite">

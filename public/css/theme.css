@@ -2,19 +2,19 @@
 
 * Template Name: Plesir - Car & Travel Mobile Template
 * Version: 1.0
-* Author: Hidratheme 
-* Developed By: Hidratheme  
+* Author: Hidratheme
+* Developed By: Hidratheme
 * Author URL: https://themeforest.net/user/hidratheme
- 
+
 ================================================*/
 /*================================================
-            Table of contents  
+            Table of contents
 ==================================================
 
-1. GENERAL  
+1. GENERAL
 2. PRELOADER
 3. HEADER
-4. SIDEBAR  
+4. SIDEBAR
    4.1 SIDEBAR PROFILE
    4.2 SIDEBAR LEFT
    4.3 SIDEBAR RIGHT
@@ -25,31 +25,31 @@
    6.3 HOMEPAGE AVAILABLE CAR
    6.4 HOMEPAGE DESTINATION
    6.5 HOMEPAGE NEWS
-7. BOOKING 
+7. BOOKING
 8. SUBSCRIBE
 9. CHART
 10. CHECKOUT
 11. MY RIDES
 12. SETTING
 13. CAR LIST
-14. DESTINATIONS 
+14. DESTINATIONS
 15. NEWS LIST
-16. NEWS 
+16. NEWS
 17. FEEDBACK
 18. GALLERY
 19. REGISTER / SIGN UP
 20. LOGIN
 21. 404 PAGE
 22. CAR SINGLE PAGE
-23. PROFILE 
+23. PROFILE
 24. FOOTER
 25. PREVIEW
 
 ====================================================
-            End table content 
+            End table content
 ===================================================*/
 /* ---------------------------------------------------
-1. GENERAL  
+1. GENERAL
 ----------------------------------------------------- */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
@@ -619,7 +619,7 @@ form .input-group > .form-control:not(:last-child) {
   border: none; }
 
 /* ---------------------------------------------------
-4. SIDEBAR  
+4. SIDEBAR
 ----------------------------------------------------- */
 /* SIDEBAR PROFILE */
 .sdprofile {
@@ -1243,7 +1243,7 @@ a[data-toggle="collapse"] {
       color: #2450a6; }
 
 /*==================================================
-7. BOOKING 
+7. BOOKING
 ==================================================*/
 .gj-picker-md [role="header"],
 .gj-picker-md .arrow-begin,
@@ -1505,7 +1505,7 @@ a[data-toggle="collapse"] {
     color: #a4a4a4;
     margin-right: 5px; }
 
-/* ================================================ 
+/* ================================================
 11. MY RIDES
 ================================================ */
 .page-my-rides .db {
@@ -1654,7 +1654,7 @@ a[data-toggle="collapse"] {
         font-weight: 600; }
 
 /* ====================================================
-14. DESTINATIONS 
+14. DESTINATIONS
 ===================================================== */
 .destination-card {
   margin-bottom: 10px;
@@ -1744,7 +1744,7 @@ a[data-toggle="collapse"] {
       text-overflow: ellipsis; }
 
 /* =====================================================
-16. NEWS 
+16. NEWS
 ===================================================== */
 .tab-comment {
   padding: 0px 0px; }
@@ -1985,7 +1985,7 @@ a[data-toggle="collapse"] {
     color: #9f9f9f; }
 
 /*==================================================
-23. PROFILE 
+23. PROFILE
 ==================================================*/
 .page-profile .cf-heading {
   padding: 10px 15px;
